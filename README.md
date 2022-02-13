@@ -1,5 +1,5 @@
 # Conway's Game of Life
-**Implemeted in Python with PyQt**
+**Implemeted with Python and PyQt**
 
 
 For beginner's course with Python and PyQt
