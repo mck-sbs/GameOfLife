@@ -1,17 +1,21 @@
-from PyQt5.QtWidgets import QApplication
-from PyQt5.QtWidgets import QLabel
-from PyQt5.QtWidgets import QWidget
-
+from PyQt6.QtWidgets import QApplication, QLabel, QWidget
 import sys
 
-app = QApplication(sys.argv)
+if __name__ == "__main__":
+    """
+    Test script to verify PyQt6 installation.
+    Creates a simple window displaying 'Hello World!'.
+    """
+    app = QApplication(sys.argv)
 
-window = QWidget()
-window.setWindowTitle('PyQt5 App')
-window.setGeometry(100, 100, 280, 80)
-helloMsg = QLabel('Hello World!', parent=window)
-helloMsg.move(100, 15)
+    # Create main application window
+    window = QWidget()
+    window.setWindowTitle("PyQt6 App")  # Set window title
+    window.setGeometry(100, 100, 280, 80)  # Set window size and position
 
-window.show()
+    # Add a label with a message
+    helloMsg = QLabel("Hello World!", parent=window)
+    helloMsg.move(100, 15)  # Position the label within the window
 
-sys.exit(app.exec_())
+    window.show()  # Show the window
+    sys.exit(app.exec())  # Start the application event loop
